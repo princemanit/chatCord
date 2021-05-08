@@ -10,6 +10,10 @@
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
   <link href="lib/css/emoji.css" rel="stylesheet">
 
+  <link href="css/emojiarea.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="js/emojiarea.js"></script>
+
 
 </head>
 <body>
@@ -46,6 +50,12 @@
   <script src="/socket.io/socket.io.js">
   </script>
   <script src="js/main.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("#msg").emojioneArea();
+    })
+  </script>
+  
 
 
 </body>
